@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# ABOUT : This Script is Used To List all the Users that are Owned by the Root Users and Collaborators
+# INPUT : Export "Your" Username and Password/Token and Provide the Inputs/Arguments with it.
+#
+# Owner :https://github.com/iam-veeramalla
+#
+#########
+
+helper()
+
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -35,6 +44,16 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+
+function helper {
+expected_cmd_args=2
+if [ $# -ne $expected_cmd_args]; then
+echo "please execute the script with required cmd args
+echo "
+}
+
+
+
 
 # Main script
 
